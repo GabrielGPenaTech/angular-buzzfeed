@@ -1,55 +1,49 @@
 {
-  "title":"Você seria um herói ou vilão ?",
-  "questions":[
+  "title": "Você é mais Blue Team ou Red Team?",
+  "questions": [
     {
-      "id":1,
-      "question": "Qual super poder você escolheria ?",
-      "options":[
-        {"id": 1, "name":"Raios-Lasers", "alias":"A"},
-        {"id": 2, "name":"Voar", "alias":"B"},
-        {"id": 3, "name":"Explodir coisas", "alias":"A"},
-        {"id": 4, "name":"Curar feridas", "alias":"B"},
-        {"id": 5, "name":"Soltar fogo pelas mãos", "alias":"A"}
+      "id": 1,
+      "question": "Qual dessas habilidades você considera mais interessante desenvolver?",
+      "options": [
+        { "id": 1, "name": "Analisar logs e detectar anomalias.", "alias": "Blue" },
+        { "id": 2, "name": "Explorar vulnerabilidades em sistemas.", "alias": "Red" }
       ]
     },
     {
-      "id":2,
-      "question": "Quem você salvaria primeiro ?",
-      "options":[
-        {"id": 1, "name":"Crianças", "alias":"A"},
-        {"id": 2, "name":"Idosos", "alias":"A"},
-        {"id": 3, "name":"Não saberia escolher", "alias":"B"}
+      "id": 2,
+      "question": "Qual seria seu objetivo principal em uma simulação de ataque?",
+      "options": [
+        { "id": 1, "name": "Fortalecer as defesas após identificar falhas.", "alias": "Blue" },
+        { "id": 2, "name": "Descobrir todas as falhas exploráveis.", "alias": "Red" }
       ]
     },
     {
-      "id":3,
-      "question": "Qual a sua maior preocupação ao enfrentar outro super ser ?",
-      "options":[
-        {"id": 1, "name":"Não destruir prédios", "alias":"B"},
-        {"id": 2, "name":"Socar a cara do inimigo", "alias":"A"},
-        {"id": 3, "name":"Não sujar meu traje", "alias":"A"},
-        {"id": 4, "name":"Não deixar ninguém se ferir", "alias":"B"}
+      "id": 3,
+      "question": "Como você lidaria com uma ameaça encontrada em um ambiente corporativo?",
+      "options": [
+        { "id": 1, "name": "Contendo e mitigando o impacto da ameaça o mais rápido possível.", "alias": "Blue" },
+        { "id": 2, "name": "Testando formas de explorar a ameaça para entender seu impacto total.", "alias": "Red" }
       ]
     },
     {
-      "id":4,
-      "question": "Qual o seu maior foco ?",
-      "options":[
-        {"id": 1, "name":"Ficar rico com poderes", "alias":"A"},
-        {"id": 2, "name":"Salvar a cidade", "alias":"B"}
+      "id": 4,
+      "question": "O que te atrai mais no mundo da cibersegurança?",
+      "options": [
+        { "id": 1, "name": "Garantir a segurança e integridade dos sistemas.", "alias": "Blue" },
+        { "id": 2, "name": "Encontrar formas criativas de invadir sistemas para testá-los.", "alias": "Red" }
       ]
     },
     {
-      "id":5,
-      "question": "Qual o seu apelido de super ser ?",
-      "options":[
-        {"id": 1, "name":"O Terrível", "alias":"A"},
-        {"id": 2, "name":"Amigo da vizinhança", "alias":"B"}
+      "id": 5,
+      "question": "Como você preferiria trabalhar em uma equipe de segurança?",
+      "options": [
+        { "id": 1, "name": "Monitorando e prevenindo ataques em tempo real.", "alias": "Blue" },
+        { "id": 2, "name": "Planejando e executando testes de penetração.", "alias": "Red" }
       ]
     }
   ],
-  "results":{
-    "A": "Você muito provavelmente seria um super vilão!",
-    "B": "Você muito provavelmente seria um super Herói!"
+  "results": {
+    "Blue": "Você provavelmente pertence ao Blue Team! Você gosta de proteger, monitorar e mitigar ameaças.",
+    "Red": "Você provavelmente pertence ao Red Team! Você adora explorar vulnerabilidades e pensar como um atacante."
   }
 }

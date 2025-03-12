@@ -55,21 +55,18 @@ export class QuizComponent implements OnInit {
   }
 
   private resultQuiz() {
-    let hero = 0
-    let villain = 0
+    const answersResultQuantity: { [key: string]: number } = {};
 
     this.answers.forEach(answer => {
-      if (answer === "B") {
-        hero += 1
-      } else {
-        villain += 1
-      }
-    })
+      answersResultQuantity[answer] = (answersResultQuantity[answer] || 0) + 1;
+    });
 
-    const result = hero > villain ? "B" : "A"
+    const result = Object.keys(answersResultQuantity).reduce((highestKey, currentKey) => {
+      const currentIsGreater = answersResultQuantity[currentKey] > (answersResultQuantity[highestKey] || 0)
+      return currentIsGreater ? currentKey : highestKey;
+    }, '');
 
-    this.finalResult = quiz_questions.results[result]
-    this.finished = true
+    this.finalResult = quiz_questions.results[result as keyof typeof quiz_questions.results];
+    this.finished = true;
   }
-
 }
