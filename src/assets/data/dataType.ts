@@ -13,11 +13,10 @@ export interface Question {
 export interface Option {
   id:    number;
   name:  string;
-  alias: Answer;
+  alias: string;
 }
 
-export  type Answer = "A" | "B"
-
+// export  type Answer = "A" | "B"
 
 export interface Results {
   A: string;

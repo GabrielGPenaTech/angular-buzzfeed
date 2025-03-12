@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-option',
@@ -8,4 +8,13 @@ import { Component, Input } from '@angular/core';
 })
 export class OptionComponent {
   @Input() name: string = ''
+  @Input() value: string = ''
+
+  @Output() onClick: EventEmitter<string> = new EventEmitter<string>()
+
+  clickButton() {
+    if (this.onClick){
+      this.onClick.emit(this.value)
+    }
+  }
 }
