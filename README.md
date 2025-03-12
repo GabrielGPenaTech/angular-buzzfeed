@@ -1,59 +1,33 @@
-# AngularBuzzfeed
+O projeto "AngularBuzzfeed" é uma aplicação desenvolvida com o Angular CLI, inspirada nos questionários interativos do BuzzFeed. Seu objetivo é proporcionar aos usuários uma experiência de quiz dinâmica, onde, ao responderem a uma série de perguntas, recebem um resultado baseado em suas escolhas.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
+**Estrutura do Projeto:**
 
-## Development server
+- **Componentes:**
+  - O projeto é estruturado em componentes Angular, permitindo a modularização e reutilização de partes da interface.
 
-To start a local development server, run:
+- **Serviços:**
+  - Serviços Angular são utilizados para gerenciar a lógica de negócio e a interação entre os componentes.
 
-```bash
-ng serve
-```
+- **Dados:**
+  - As perguntas e respostas do quiz são armazenadas em um arquivo JSON, facilitando a manutenção e atualização do conteúdo sem a necessidade de alterar o código fonte.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+**Funcionalidades Principais:**
 
-## Code scaffolding
+1. **Apresentação de Perguntas:**
+   - As perguntas são exibidas sequencialmente, cada uma com um conjunto de opções de resposta.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+2. **Registro de Respostas:**
+   - As escolhas dos usuários são registradas e utilizadas para calcular o resultado final do quiz.
 
-```bash
-ng generate component component-name
-```
+3. **Cálculo e Exibição de Resultados:**
+   - Com base nas respostas fornecidas, o aplicativo determina e exibe um resultado personalizado ao usuário.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+**Tecnologias Utilizadas:**
 
-```bash
-ng generate --help
-```
+- **Angular:** Framework principal para o desenvolvimento da aplicação.
 
-## Building
+- **TypeScript:** Linguagem utilizada para escrever o código fonte, oferecendo tipagem estática e recursos avançados de desenvolvimento.
 
-To build the project run:
+- **HTML e CSS:** Utilizados para estruturar e estilizar a interface do usuário, garantindo uma experiência atraente e responsiva.
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Este projeto serve como uma excelente referência para desenvolvedores que desejam aprender sobre a construção de aplicações interativas com Angular, especialmente no contexto de quizzes e questionários dinâmicos. ****
